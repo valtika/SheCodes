@@ -148,8 +148,7 @@
         }
 
         function canApply() {
-            let age = prompt("How old are you?");
-            return age >= 12;
+            let email = prompt("What is your email");
         }
 
         function apply() {
@@ -161,7 +160,6 @@
                 updateHeading(`Sorry ${firstName}, we'll need you to stop into the gym to apply with a guardian`);
             }
         }
-
         let applyButton = document.querySelector("button");
         applyButton.addEventListener("click", apply);
     </script>
