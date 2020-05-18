@@ -9,11 +9,9 @@
       body {
         font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
       }
-
       section {
         margin: 120px 0;
       }
-
       h1,
       h2 {
         font-weight: 900;
@@ -21,25 +19,21 @@
         line-height: 48px;
         margin: 0;
       }
-
       h1 {
         color: #272044;
         text-align: center;
       }
-
       h2 {
         text-align: center;
         color: #885df1;
         padding: 0 0 24px;
       }
-
       p {
         font-size: 18px;
         line-height: 28px;
         font-family: PT Mono, monospace;
         text-align: center;
       }
-
       button {
         border-radius: 25px;
         margin: 0 auto;
@@ -53,7 +47,6 @@
         text-decoration: none;
         transition: all 200ms ease;
       }
-
       button:hover {
         color: #fff;
         background: #885df1;
@@ -82,20 +75,20 @@
       </button>
     </section>
     <script>
-      function applyNow() {
-        let name = prompt("What is your name?");
-        let age = prompt(" How old are you?");
-        if (age >= 18) {
-          let h1 = document.querySelector("h1");
-          h1.innerHTML = "Hi, " + name + "! Welcome to SheCodes !";
+      function canSpeakPortuguese() {
+        let country = prompt("What country are you from?");
+        if (country === "Brazil" || country === "Portugal") {
+          alert("You speak Portuguese");
         } else {
-          h1.innerHTML = "Sorry, " + name + "! You cannot join SheCodes ";
-          let h1 = document.querySelector(h1);
+          alert("Go learn Portuguese!");
         }
       }
 
-      let applyNowButton = document.querySelector(".button");
-      applyNowButton.addEventListener("click", applyNow);
+      canSpeakPortuguese();
     </script>
   </body>
 </html>
+
+<h2 class="p-0">
+  Access a new career in Technology
+</h2>
