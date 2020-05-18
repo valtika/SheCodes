@@ -131,7 +131,30 @@
             </p>
         </li>
     </ul>
+<script>
+    function updateHeading(newHeading) {
+        let heading = document.querySelector("h1");
+        heading.innerHTML = newHeading;
+    }
 
+    function canApply() {
+        let age = prompt("How old are you?");
+        return age >= 12;
+    }
+
+    function apply() {
+        let firstName = prompt("What is your first name?");
+
+        if (canApply()) {
+            updateHeading(`Hi ${firstName}! Welcome, are you ready to kick some butt?`);
+        } else {
+            updateHeading(`Sorry ${firstName}, we'll need you to stop into the gym to apply with a guardian.`);
+        }
+    }
+
+    let applyButton = document.querySelector("button");
+    applyButton.addEventListener("click", apply);
+</script>
     </p>
         <button>
             Try a Free Class!
