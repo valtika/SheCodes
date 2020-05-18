@@ -142,21 +142,15 @@
          Coded by Valbona Tika
     </p>
     <script>
-              function updateHeading(newHeading) {
-                    let heading = document.querySelector("h1");
-                    heading.innerHTML = newHeading;
-                }
-
-
-                function apply() {
-                    let firstName = prompt("What is your first name?");
-                    let email = prompt("What is your email");
-                }
-                alert("Get ready to kick some butt!");
-
-
-                let applyButton = document.querySelector("button");
-                applyButton.addEventListener("click", apply);
+        function applyNow() {
+        let name = prompt("What is your name?");
+        let age = prompt("What is your email?");
+        alert(
+          "thank you, " + name + "! Get ready to kick some butt!"
+        );
+      }
+      let applyButton = document.querySelector("button");
+      applyButton.addEventListener("click", applyNow);
         
     </script>
   </body>
