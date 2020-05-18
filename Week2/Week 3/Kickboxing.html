@@ -150,6 +150,22 @@
         function apply() {
             let firstName = prompt("What is your first name?");
             let email = prompt("What is your email");
+            let age = prompt("How old are you?");
+
+        
+            function canApply() {
+                let age = prompt("How old are you?");
+                return age >= 18;
+            }
+
+        function apply() {
+            let firstName = prompt("What is your first name?");
+
+                if (canApply()) {
+                    updateHeading(`Hi ${firstName}! Get ready to kick some butt!`);
+                } else {
+                    updateHeading(`Sorry ${firstName}, you're too young to try out the class`);
+                }
 
         alert(
                 "Thank you! Get ready to kick some butt!");
@@ -158,15 +174,4 @@
         applyButton.addEventListener("click", apply);
     </script>
   </body>
-</html> 
-
-
-
-
-
-
-
-
-
-
-
+</html>    
