@@ -142,36 +142,29 @@
          Coded by Valbona Tika
     </p>
     <script>
-        function updateHeading(newHeading) {
-            let heading = document.querySelector("h1");
-            heading.innerHTML = newHeading;
-        }
-
-        function apply() {
-            let firstName = prompt("What is your first name?");
-            let email = prompt("What is your email");
-            let age = prompt("How old are you?");
-
-        
-            function canApply() {
-                let age = prompt("How old are you?");
-                return age >= 18;
-            }
-
-        function apply() {
-            let firstName = prompt("What is your first name?");
-
-                if (canApply()) {
-                    updateHeading(`Hi ${firstName}! Get ready to kick some butt!`);
-                } else {
-                    updateHeading(`Sorry ${firstName}, you're too young to try out the class`);
+              function updateHeading(newHeading) {
+                    let heading = document.querySelector("h1");
+                    heading.innerHTML = newHeading;
                 }
 
-        alert(
-                "Thank you! Get ready to kick some butt!");
-        }
-        let applyButton = document.querySelector("button");
-        applyButton.addEventListener("click", apply);
+                function canApply() {
+                    let age = prompt("How old are you?");
+                    return age >= 18;
+                }
+
+                function apply() {
+                    let firstName = prompt("What is your first name?");
+
+                    if (canApply()) {
+                        updateHeading(`Hi ${firstName}! Welcome to SheCodes 👩‍💻`);
+                    } else {
+                        updateHeading(`Sorry ${firstName}, you can't apply to SheCodes.`);
+                    }
+                }
+
+                let applyButton = document.querySelector("button");
+                applyButton.addEventListener("click", apply);
+        
     </script>
   </body>
 </html>    
