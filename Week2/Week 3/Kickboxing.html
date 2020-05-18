@@ -147,18 +147,17 @@
                     heading.innerHTML = newHeading;
                 }
 
-                function canApply() {
-                    let age = prompt("How old are you?");
-                    return age >= 18;
-                }
 
                 function apply() {
                     let firstName = prompt("What is your first name?");
+                    let email = prompt("What is your email");
+                    let age = prompt("How old are you?");
+                    return age >= 18;
 
                     if (canApply()) {
-                        updateHeading(`Hi ${firstName}! Welcome to SheCodes 👩‍💻`);
+                        updateHeading(`Hi ${firstName}! Get ready to kick some butt!`);
                     } else {
-                        updateHeading(`Sorry ${firstName}, you can't apply to SheCodes.`);
+                        updateHeading(`Sorry ${firstName}, you're too young to join!`);
                     }
                 }
 
