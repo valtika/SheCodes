@@ -154,11 +154,8 @@
         function apply() {
             let firstName = prompt("What is your first name?");
 
-            if (canApply()) {
-                updateHeading(`Hi ${firstName}! Welcome, are you ready to kick some butt?`);
-            } else {
-                updateHeading(`Sorry ${firstName}, we'll need you to stop into the gym to apply with a guardian`);
-            }
+        alert(
+                "Thank you! Get ready to kick some butt!");
         }
         let applyButton = document.querySelector("button");
         applyButton.addEventListener("click", apply);
